@@ -8,11 +8,8 @@ import {createStore} from 'redux';
 import store from '../Redux/Store/store';
 // import addTodo from '../Redux/Actions/actions';
 
-
-import {bindActionCreators} from 'redux';  
-import { Add, Subtract, Reset } from '../Redux/Actions/actions';
-
-
+import {bindActionCreators} from 'redux';
+import {Add, Subtract, Reset} from '../Redux/Actions/actions';
 
 export class Counter extends Component {
 
@@ -45,10 +42,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
-        onAddAction      : Add,
-        onSubtractAction : Subtract,
+        onAddAction: Add,
+        onSubtractAction: Subtract,
         onResetAction: Reset
-      }, dispatch);
+    }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);

@@ -6,7 +6,6 @@ import {createStore} from 'redux';
 import store from './Source/Redux/Store/store'
 
 import Counter from './Source/Counter/Counter'
-// import Form from './Form'
 
 class App extends Component {
     render() {
@@ -17,7 +16,7 @@ class App extends Component {
                 <View style={styles.container}>
                     <Text style={styles.welcome}>Welcome to React Native!</Text>
                     <Counter/>
-                    {/* <Form /> */}
+
                 </View>
 
             </Provider>
