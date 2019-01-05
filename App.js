@@ -11,7 +11,7 @@ class App extends Component {
             <Provider store={store}>
                 <View style={styles.container}>
                     <Text style={styles.welcome}>Welcome to React Native!</Text>
-                    {/* <Counter/> */}
+                    <Counter/>
                 </View>
             </Provider>
 
